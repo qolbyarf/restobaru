@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunger Apps</title>
+  <link rel="stylesheet" src="/styles/main.css">
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+</head>
+
+<!-- 
+untuk bagian "Halaman tidak berpindah ketika klik view details pada card 
+restoran tetapi url sudah berubah, dan harus refresh manual untuk melihat perubahan." mohon arahan nya bang 
+soalnya page detail baru bisa tampil setelah direfresh.
+-->
+
+<!-- bang tolong ini gimana webmanifestnya -->
+<body>
+  <header>
+    <div class="nav-brand">
+      <span>Hunger Apps</span>
+      <a href="#mainContent" class="skip-link">Skip to content</a>
+    </div>
+    <div class="nav-items">
+      <button id="hamburgerButton" aria-label="Open navigation menu">☰</button>
+      <nav id="navigationMenu" aria-labelledby="menu" class="nav" >
+        <ul class="nav">
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li><a href="https://www.linkedin.com/in/qolbyarief/">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero"></section>
+  
+  <section class="explore-restaurants">
+    <h2>Explore Restaurant</h2>
+    <div class="restaurant-list"></div>
+  </section>
+
+  <main id="mainContent" tabindex="0">
+    
+  </main>
+
+  <footer>
+    <p>Copyright © 2020 - Hunger Apps</p>
+  </footer>
+
+</body>
+</html>
